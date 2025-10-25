@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fourier Series of f(x) = (π - x/2)^2 on [0, 2π]</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="/styles.css" />
+  <script>
+    window.MathJax = { tex: { inlineMath: [["$","$"],["\\(","\\)"]], displayMath: [["$$","$$"],["\\[","\\]"]] } };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Fourier Series</h1>
+    <p class="subtitle">Function on [0, 2π] with period 2π</p>
+
+    <section class="card">
+      <h2>Definition</h2>
+      <p>\[ f(x) = (\pi - \tfrac{x}{2})^2,\quad 0 \le x \le 2\pi,\quad f(x+2\pi)=f(x). \]</p>
+    </section>
+
+    <section class="card">
+      <h2>Fourier Series Expansion</h2>
+      <p>
+        \[
+          f(x) = \frac{\pi^2}{3} + \sum_{n=1}^{\infty} \left( \frac{1}{n^2}\cos(nx) + \frac{\pi}{n}\sin(nx) \right).
+        \]
+      </p>
+      <details>
+        <summary>Coefficients</summary>
+        <ul>
+          <li>$a_0 = \dfrac{2\pi^2}{3}$ (so $\tfrac{a_0}{2} = \dfrac{\pi^2}{3}$)</li>
+          <li>$a_n = \dfrac{1}{n^2}$</li>
+          <li>$b_n = \dfrac{\pi}{n}$</li>
+        </ul>
+      </details>
+    </section>
+
+    <footer>
+      <p>Generated result for the given periodic function.</p>
+    </footer>
+  </main>
+</body>
+</html>
